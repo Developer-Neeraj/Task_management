@@ -60,6 +60,7 @@ app.use((req, res, next) => {
 
 // server error handling
 app.use((err, req, res, next) => {
+  res.send('endejndjen')
   return errorResponse(res, {
     statusCode: err.status || 500,
     message: err.message,
