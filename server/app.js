@@ -55,13 +55,11 @@ app.use("/api/task", taskRouter);
 
 // client error handling
 app.use((req, res, next) => {
-  res.send("Tera bhai ji")
   next(createError(404, "Page Not Found"));
 });
 
 // server error handling
 app.use((err, req, res, next) => {
-  res.send('endejndjen')
   return errorResponse(res, {
     statusCode: err.status || 500,
     message: err.message,
