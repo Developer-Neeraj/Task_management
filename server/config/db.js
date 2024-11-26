@@ -4,7 +4,7 @@ const { dbHost, dbUserName, dbPass, dbName, dbPort } = require("../secret");
 const connectDB = async () => {
   try {
     // Construct MongoDB URI
-    const dbUri = `mongodb+srv://freelancersoftwaredev:<db_password>@codestare.1n4ca.mongodb.net/?retryWrites=true&w=majority&appName=codestare`;
+    const dbUri = `mongodb+srv://freelancersoftwaredev:e82ADeRpznaRJU2@codestare.1n4ca.mongodb.net/?retryWrites=true&w=majority&appName=codestare`;
 
     // Connection options
     const options = {
