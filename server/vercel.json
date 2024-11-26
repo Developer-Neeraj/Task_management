@@ -1,7 +1,7 @@
 {
     "version": 2,
     "functions": {
-      "routes/auth.routes.js" : {
+      "controller/auth.controller.js" : {
           "memory": 1024,
           "maxDuration": 30
       }
