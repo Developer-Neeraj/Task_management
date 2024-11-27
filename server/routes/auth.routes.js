@@ -13,10 +13,6 @@ const authRouter = require("express").Router();
 
 authRouter.post(
   "/login",
-  loginLimiter,
-  signInValidator,
-  validationHandler,
-  isLoggedOut,
   handleLogin
 );
 authRouter.post("/logout", isLoggedIn, handleLogout);
