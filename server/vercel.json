@@ -1,15 +1,12 @@
 {
     "version": 2,
-    "functions": {
-      "controller/auth.controller.js" : {
-          "memory": 1024,
-          "maxDuration": 30
-      }
-    },
-    "routes": [
+    "builds": [
       {
-        "handle": "filesystem"
-      },
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
       {
         "src": "/(.*)",
         "dest": "/"
